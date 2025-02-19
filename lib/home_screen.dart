@@ -14,12 +14,16 @@ class _HomeScreenState extends State<HomeScreen> {
       bottomNavigationBar: BottomNavigationBar(
         items: [
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: ("Home"),
+            icon: Icon(Icons.person),
+            label: ("Profile"),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: ("Home"),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.shop),
+            label: ("Shopping"),
           ),
         ],
       ),
@@ -89,105 +93,11 @@ class _HomeScreenState extends State<HomeScreen> {
                   childAspectRatio: 0.75,
                 ),
                 children: [
-                  Card(
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Expanded(
-                            child: Image.asset(
-                              "assets/images/i1.jpg",
-                              fit: BoxFit.fill,
-                            ),
-                          ),
-                          Text(
-                            "Camera Canon X3",
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontWeight: FontWeight.bold),
-                          ),
-                          Text(
-                            "New Version Of Camera Canon With Hight Qualit",
-                            style: TextStyle(color: Colors.grey, fontSize: 10),
-                          ),
-                          Text(
-                            "1300 DH",
-                            style: TextStyle(
-                                color: Colors.amber,
-                                fontWeight: FontWeight.bold),
-                          )
-                        ],
-                      ),
-                    ),
-                  ),
-                  Card(
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Expanded(
-                            child: Image.asset(
-                              "assets/images/i2.jfif",
-                              fit: BoxFit.fill,
-                            ),
-                          ),
-                          Text(
-                            "Camera Canon X3",
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontWeight: FontWeight.bold),
-                          ),
-                          Text(
-                            "New Version Of Camera Canon With Hight Qualit",
-                            style: TextStyle(color: Colors.grey, fontSize: 10),
-                          ),
-                          Text(
-                            "1300 DH",
-                            style: TextStyle(
-                                color: Colors.amber,
-                                fontWeight: FontWeight.bold),
-                          )
-                        ],
-                      ),
-                    ),
-                  ),
-                  Card(
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Expanded(
-                            child: Image.asset(
-                              "assets/images/p3.jfif",
-                              fit: BoxFit.fill,
-                            ),
-                          ),
-                          Text(
-                            "Camera Canon X3",
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontWeight: FontWeight.bold),
-                          ),
-                          Text(
-                            "New Version Of Camera Canon With Hight Qualit",
-                            style: TextStyle(color: Colors.grey, fontSize: 10),
-                          ),
-                          Text(
-                            "1300 DH",
-                            style: TextStyle(
-                                color: Colors.amber,
-                                fontWeight: FontWeight.bold),
-                          )
-                        ],
-                      ),
-                    ),
-                  ),
-                  Card(
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
+                  GestureDetector(
+                    onTap: () {
+                      // Navigator.of(context).push(Mater)
+                    },
+                    child: Card(
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Column(
@@ -195,7 +105,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           children: [
                             Expanded(
                               child: Image.asset(
-                                "assets/images/i3.jfif",
+                                "assets/images/i1.jpg",
                                 fit: BoxFit.fill,
                               ),
                             ),
@@ -217,6 +127,117 @@ class _HomeScreenState extends State<HomeScreen> {
                                   fontWeight: FontWeight.bold),
                             )
                           ],
+                        ),
+                      ),
+                    ),
+                  ),
+                  GestureDetector(
+                    onTap: () {},
+                    child: Card(
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Expanded(
+                              child: Image.asset(
+                                "assets/images/i2.jfif",
+                                fit: BoxFit.fill,
+                              ),
+                            ),
+                            Text(
+                              "Camera Canon X3",
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                            Text(
+                              "New Version Of Camera Canon With Hight Qualit",
+                              style:
+                                  TextStyle(color: Colors.grey, fontSize: 10),
+                            ),
+                            Text(
+                              "1300 DH",
+                              style: TextStyle(
+                                  color: Colors.amber,
+                                  fontWeight: FontWeight.bold),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                  GestureDetector(
+                    onTap: () {},
+                    child: Card(
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Expanded(
+                              child: Image.asset(
+                                "assets/images/p3.jfif",
+                                fit: BoxFit.fill,
+                              ),
+                            ),
+                            Text(
+                              "Camera Canon X3",
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                            Text(
+                              "New Version Of Camera Canon With Hight Qualit",
+                              style:
+                                  TextStyle(color: Colors.grey, fontSize: 10),
+                            ),
+                            Text(
+                              "1300 DH",
+                              style: TextStyle(
+                                  color: Colors.amber,
+                                  fontWeight: FontWeight.bold),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                  GestureDetector(
+                    onTap: () {},
+                    child: Card(
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Expanded(
+                                child: Image.asset(
+                                  "assets/images/i3.jfif",
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                              Text(
+                                "Camera Canon X3",
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              Text(
+                                "New Version Of Camera Canon With Hight Qualit",
+                                style:
+                                    TextStyle(color: Colors.grey, fontSize: 10),
+                              ),
+                              Text(
+                                "1300 DH",
+                                style: TextStyle(
+                                    color: Colors.amber,
+                                    fontWeight: FontWeight.bold),
+                              )
+                            ],
+                          ),
                         ),
                       ),
                     ),
